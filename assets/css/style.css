@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*
+Theme Name: jatax
+Theme URI: http://Blue-NET.pl
+Theme Version: 2.31.1
+Author: Blue-NET Mateusz Serwinowski
+Author URI: http://Blue-NET.pl
+Description: jatax theme by Blue-NET
+License: Custom
+License URI: URI: http://themeforest.net/licenses
+*/
+
+@import url("../plugins/bootstrap/css/bootstrap.min.css");
+@import url("../plugins/bootstrap/css/bootstrap-theme.min.css");
+
+
+/********************************************************
+/                  	 	    TOP 	                
+*********************************************************/
+
+.navbar.navbar-default-top {
+	background: rgba(6,23,32,.7);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+	border-color:rgba(255,255,255,.35);
+	border-top:none;
+}
+
+.navbar .navbar-brand{
+	height:auto;
+	padding:5px;
+}
+
+.navbar .navbar-toggle{
+	border-color:rgba(255,255,255,.35);
+	background:rgba(255,255,255,.35);
+	padding:7px 9px 9px;
+	margin-top:15px;
+}
+
+.navbar .navbar-toggle span{
+	color:#fff;
+	display:block;
+}
+
+.navbar .navbar-collapse ul{
+	margin-top:5px;
+}
+
+.navbar .navbar-collapse ul li a{
+	color:#fff;
+	text-transform:uppercase;
+}
+
+.navbar .navbar-collapse ul li a:hover,
+.nav .open>a, 
+.nav .open>a:hover, 
+.nav .open>a:focus{
+	background:none;
+	color:#fff000;
+}
+
+.navbar .navbar-collapse ul li .dropdown-menu::before{
+	background:url(../img/bgMenu1.jpg) no-repeat left top;
+	position:absolute;
+	display:table;
+	content:"  ";
+	width:100%;
+	height:3px;
+	top:-3px;
+}
+
+.navbar .navbar-collapse ul li .dropdown-menu{
+	background:#02090d url(../img/bgMenu2.png) no-repeat bottom right;
+	padding-top:15px;
+	padding-bottom:25px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	font-size:12px;
+}
+
+.navbar .navbar-collapse ul li .dropdown-menu li a{
+	color:#c9d2d7;
+}
+
+.navbar .navbar-collapse ul li .dropdown-menu li a:hover{
+	background:url(../img/bgActive.jpg) no-repeat left center;
+	color:#fff;
+}
+
+
+/********************************************************
+/                  	 	CONTENT 	                
+*********************************************************/
+
+#content{
+	background:url(../img/bgOrigami.jpg) no-repeat center top;
+	background-size:cover;
+	height:800px;
+}
