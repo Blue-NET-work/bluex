@@ -1,0 +1,243 @@
+@charset "utf-8";
+/*
+Theme Name: jatax
+Theme URI: http://Blue-NET.pl
+Theme Version: 2.31.1
+Author: Blue-NET Mateusz Serwinowski
+Author URI: http://Blue-NET.pl
+Description: jatax theme by Blue-NET
+License: Custom
+License URI: URI: http://themeforest.net/licenses
+*/
+
+@import url("../plugins/bootstrap/css/bootstrap.min.css");
+@import url("../plugins/bootstrap/css/bootstrap-theme.min.css");
+@import url("../plugins/font-awesome/css/font-awesome.css");
+@import url("felis.typography.css");
+
+
+body{
+	font-size:12px;
+}
+
+a{color:#081f31;}
+a:hover{color:#3D9ACC;}
+
+/********************************************************
+/                  	 	    TOP 	                
+*********************************************************/
+
+.navbar.navbar-default-top {
+	font-family: 'Roboto', sans-serif;
+	background: rgba(6,23,32,.7);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
+	border-color:rgba(255,255,255,.35);
+	border-top:none;
+}
+
+.navbar .navbar-brand{
+	height:auto;
+	padding:5px;
+}
+
+.navbar .navbar-toggle{
+	border-color:rgba(255,255,255,.35);
+	background:rgba(255,255,255,.35);
+	padding:7px 9px 9px;
+	margin-top:15px;
+}
+
+.navbar .navbar-toggle span{
+	color:#fff;
+	display:block;
+}
+
+.navbar .navbar-collapse ul{
+	margin-top:5px;
+}
+
+.navbar .navbar-collapse ul li a{
+	color:#fff;
+	text-transform:uppercase;
+}
+
+.navbar .navbar-collapse ul li a:hover,
+.nav .open>a, 
+.nav .open>a:hover, 
+.nav .open>a:focus{
+	background:none;
+	color:#fff000;
+}
+
+.navbar .navbar-collapse ul li .dropdown-menu::before{
+	background:url(../img/bgMenu1.jpg) no-repeat left top;
+	position:absolute;
+	display:table;
+	content:"  ";
+	width:100%;
+	height:3px;
+	top:-3px;
+}
+
+.navbar .navbar-collapse ul li .dropdown-menu{
+	background:#02090d url(../img/bgMenu2.png) no-repeat bottom right;
+	padding-top:15px;
+	padding-bottom:25px;
+	border-bottom-left-radius:20px;
+	border-bottom-right-radius:20px;
+	font-size:12px;
+}
+
+.navbar .navbar-collapse ul li .dropdown-menu li a{
+	color:#c9d2d7;
+}
+
+.navbar .navbar-collapse ul li .dropdown-menu li a:hover{
+	background:url(../img/bgActive.jpg) no-repeat left center;
+	color:#fff;
+}
+
+
+/********************************************************
+/                  	 	CONTENT 	                
+*********************************************************/
+
+#content{
+	background:url(../img/bgOrigami.jpg) no-repeat center top;
+	background-size:cover;
+	padding-top:40px;
+}
+
+
+#slider1{
+	height:450px;
+	overflow:hidden;
+}
+
+
+
+/*Recent Works*/
+.recent-work {
+    margin: 20px 0;
+    position: relative;
+}
+.recent-work .col-md-4 {
+    padding: 0;
+}
+.recent-work .col-md-8 {
+    padding-right: 0;
+}
+
+.recent-work a:hover {
+    text-decoration: none;
+}
+
+.recent-work h2,
+.recent-work h2 a{
+	font-family: 'Roboto', sans-serif;
+    margin: 3px 0 0;
+    padding-right: 50px;
+	color:#081f31;
+	text-transform:uppercase;
+	font-size:36px;
+	line-height:37px;
+}
+
+.recent-work h2 span {
+	color:#ffd800;
+	display:block;
+}
+
+.tab-content{
+	margin-top:20px;
+}
+
+
+/********************************************************
+/                  	 	 footer	                
+*********************************************************/
+#footer{
+	margin-bottom:20px;
+}
+
+#footer .sidebar-footer{
+	border-right:1px solid #ededed;
+}
+
+#footer h4,
+#footer h4 a{
+	font-family: 'Roboto', sans-serif;
+    margin: 3px 0 20px;
+    padding-right: 50px;
+	color:#081f31;
+	text-transform:uppercase;
+	font-size:18px;
+}
+
+#footer h4 span {
+	color:#ffd800;
+}
+
+#footer .social{
+	padding-top:10px;
+	padding-bottom:5px;
+}
+
+#footer .social a{
+	display:inline-block;
+	padding:6px 0px;
+	margin-right:5px;
+	width:30px;
+	text-align:center;
+	border-radius:20px;
+	background:#081f31;
+	color:#fff;
+	text-decoration:none;
+	font-size:13px;
+}
+
+#footer .social a:hover{
+	background:#ffd800;
+	color:#081f31;
+}
+
+#footer ul li{
+	padding:5px 0;
+	border-top:1px solid #ededed;
+}
+
+#footer ul li:first-child{
+	border-top:none;
+}
+
+#footer ul li a{
+	display:block;
+	padding:5px 15px;
+	color:#081f31;
+	border-radius:10px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+#footer ul li a:hover{
+	background:#ffd800;
+}
+
+/********************************************************
+/                  	 	copyright 	                
+*********************************************************/
+#copyright{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	color:#081f31;
+	font-size:11px;
+	border-top:1px solid #ededed;
+	padding-top:35px;
+	padding-bottom:20px;
+}
+
+#copyright a{
+	color:#081f31;
+}
