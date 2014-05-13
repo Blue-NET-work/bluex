@@ -12,13 +12,23 @@ License URI: URI: http://themeforest.net/licenses
 
 @import url("../plugins/bootstrap/css/bootstrap.min.css");
 @import url("../plugins/bootstrap/css/bootstrap-theme.min.css");
+@import url("../plugins/font-awesome/css/font-awesome.css");
+@import url("felis.typography.css");
 
+
+body{
+	font-size:12px;
+}
+
+a{color:#081f31;}
+a:hover{color:#3D9ACC;}
 
 /********************************************************
 /                  	 	    TOP 	                
 *********************************************************/
 
 .navbar.navbar-default-top {
+	font-family: 'Roboto', sans-serif;
 	background: rgba(6,23,32,.7);
 	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
 	box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075);
@@ -96,5 +106,138 @@ License URI: URI: http://themeforest.net/licenses
 #content{
 	background:url(../img/bgOrigami.jpg) no-repeat center top;
 	background-size:cover;
-	height:800px;
+	padding-top:40px;
+}
+
+
+#slider1{
+	height:450px;
+	overflow:hidden;
+}
+
+
+
+/*Recent Works*/
+.recent-work {
+    margin: 20px 0;
+    position: relative;
+}
+.recent-work .col-md-4 {
+    padding: 0;
+}
+.recent-work .col-md-8 {
+    padding-right: 0;
+}
+
+.recent-work a:hover {
+    text-decoration: none;
+}
+
+.recent-work h2,
+.recent-work h2 a{
+	font-family: 'Roboto', sans-serif;
+    margin: 3px 0 0;
+    padding-right: 50px;
+	color:#081f31;
+	text-transform:uppercase;
+	font-size:36px;
+	line-height:37px;
+}
+
+.recent-work h2 span {
+	color:#ffd800;
+	display:block;
+}
+
+.tab-content{
+	margin-top:20px;
+}
+
+
+/********************************************************
+/                  	 	 footer	                
+*********************************************************/
+#footer{
+	margin-bottom:20px;
+}
+
+#footer .sidebar-footer{
+	border-right:1px solid #ededed;
+}
+
+#footer h4,
+#footer h4 a{
+	font-family: 'Roboto', sans-serif;
+    margin: 3px 0 20px;
+    padding-right: 50px;
+	color:#081f31;
+	text-transform:uppercase;
+	font-size:18px;
+}
+
+#footer h4 span {
+	color:#ffd800;
+}
+
+#footer .social{
+	padding-top:10px;
+	padding-bottom:5px;
+}
+
+#footer .social a{
+	display:inline-block;
+	padding:6px 0px;
+	margin-right:5px;
+	width:30px;
+	text-align:center;
+	border-radius:20px;
+	background:#081f31;
+	color:#fff;
+	text-decoration:none;
+	font-size:13px;
+}
+
+#footer .social a:hover{
+	background:#ffd800;
+	color:#081f31;
+}
+
+#footer ul li{
+	padding:5px 0;
+	border-top:1px solid #ededed;
+}
+
+#footer ul li:first-child{
+	border-top:none;
+}
+
+#footer ul li a{
+	display:block;
+	padding:5px 15px;
+	color:#081f31;
+	border-radius:10px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+#footer ul li a:hover{
+	background:#ffd800;
+}
+
+/********************************************************
+/                  	 	copyright 	                
+*********************************************************/
+#copyright{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	color:#081f31;
+	font-size:11px;
+	border-top:1px solid #ededed;
+	padding-top:35px;
+	padding-bottom:20px;
+}
+
+#copyright a{
+	color:#081f31;
 }
