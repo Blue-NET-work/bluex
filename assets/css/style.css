@@ -99,6 +99,11 @@ a:hover{color:#3D9ACC;}
 	color:#fff;
 }
 
+@media (max-width: 768px) {
+	.navbar .navbar-collapse ul li a{
+		padding: 15px 10px;
+	}
+}
 
 /********************************************************
 /                  	 	CONTENT 	                
