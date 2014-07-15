@@ -1,11 +1,11 @@
 @charset "utf-8";
 /*
 Theme Name: jatax
-Theme URI: http://Blue-NET.pl
 Theme Version: 2.31.1
+Theme URI: http://themes.Blue-NET.eu/jatax/
 Author: Blue-NET Mateusz Serwinowski
 Author URI: http://Blue-NET.pl
-Description: jatax theme by Blue-NET
+Author E-MAIL: biuro@Blue-NET.pl
 License: Custom
 License URI: URI: http://themeforest.net/licenses
 */
@@ -39,7 +39,7 @@ a:hover{color:#3D9ACC;}
 
 .navbar .navbar-brand{
 	height:auto;
-	padding:5px;
+	padding:11px 5px;
 }
 
 .navbar .navbar-toggle{
