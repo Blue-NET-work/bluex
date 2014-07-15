@@ -245,8 +245,8 @@
 }
 
 .recent-work ul.bxslider li:hover b,
-.recent-work ul.bxslider li:hover strong {
-	color: #fff;
+.recent-work ul.bxslider li:hover strong {	
+	color:#333;
 }
 
 .recent-work ul.bxslider li a.bxslider-block {
@@ -256,11 +256,11 @@
 }
 
 .recent-work ul.bxslider li:hover a.bxslider-block {
-	background: #3D9ACC;
+	background: #ffe400;
     transition: all 0.9s ease;
     -o-transition: all 0.9s ease;
     -moz-transition: all 0.9s ease;
-    -webkit-transition: all 0.9s ease;		
+    -webkit-transition: all 0.9s ease;	
 }
 
 /*Hover Effects*/
