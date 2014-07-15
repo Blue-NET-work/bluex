@@ -1,8 +1,8 @@
 @charset "utf-8";
 /*
-Theme Name: jatax
+Theme Name: bluex
 Theme Version: 2.31.1
-Theme URI: http://themes.Blue-NET.eu/jatax/
+Theme URI: http://themes.Blue-NET.eu/bluex/
 Author: Blue-NET Mateusz Serwinowski
 Author URI: http://Blue-NET.pl
 Author E-MAIL: biuro@Blue-NET.pl
@@ -10,11 +10,26 @@ License: Custom
 License URI: URI: http://themeforest.net/licenses
 */
 
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. Header
+3. Content
+4. Footer
+5. Copyright
+
+------------------------------------------------------------------*/
+
 @import url("../plugins/bootstrap/css/bootstrap.min.css");
 @import url("../plugins/bootstrap/css/bootstrap-theme.min.css");
 @import url("../plugins/font-awesome/css/font-awesome.css");
 @import url("felis.typography.css");
 
+
+/*------------------------------------------------------------------
+	[1. Body]
+------------------------------------------------------------------*/
 
 body{
 	font-size:12px;
@@ -23,10 +38,10 @@ body{
 a{color:#081f31;}
 a:hover{color:#3D9ACC;}
 
-/********************************************************
-/                  	 	    TOP 	                
-*********************************************************/
 
+/*------------------------------------------------------------------
+	[2. Header]
+------------------------------------------------------------------*/
 .navbar.navbar-default-top {
 	font-family: 'Roboto', sans-serif;
 	background: rgba(6,23,32,.88);
@@ -55,7 +70,7 @@ a:hover{color:#3D9ACC;}
 }
 
 .navbar .navbar-collapse ul{
-	margin-top:5px;
+	margin-top:0;
 }
 
 .navbar .navbar-collapse ul li a{
@@ -110,10 +125,76 @@ a:hover{color:#3D9ACC;}
 	.space-mobile{margin-bottom:20px;}
 }
 
-/********************************************************
-/                  	 	CONTENT 	                
-*********************************************************/
+.bx-slider li{
+	position:relative;	
+}
 
+.bx-slider .info{
+	position: absolute;
+	top:30%;
+	width:100%;
+	font-size:14px;
+	color:#fff;
+}
+
+.bx-slider .info h4{
+	color:#fff;
+	font-size:60px;
+	margin-bottom:35px;
+	text-transform:uppercase;
+}
+
+.bx-slider .info h4 span{
+	display:block;
+	color:#ffe400;
+}
+
+.bx-slider .info .more{
+	background:url(../img/more.png) no-repeat left center;
+	color:#ffe400;
+	font-size:16px;
+	font-weight:600;
+	display:block;
+	padding:10px 0 10px 40px;
+	margin-top:20px;
+}
+
+header .bx-wrapper .bx-controls-direction a,
+header .bx-wrapper .bx-prev,
+header .bx-wrapper .bx-next,
+header .bx-wrapper .bx-controls-direction a:hover,
+header .bx-wrapper .bx-prev:hover,
+header .bx-wrapper .bx-next:hover{
+	background:url(../img/arrows.png) no-repeat;
+	width:30px;
+	height:30px;
+	top:50%;
+	margin-top:-15px;
+}
+
+header .bx-wrapper .bx-prev{
+	background-position:left top !important;
+	left:5%;
+}
+
+header .bx-wrapper .bx-next{
+	background-position:right top !important;
+	left:auto;
+	right:5%;
+}
+
+header .bx-wrapper .bx-prev:hover{
+	background-position:left bottom !important;
+}
+
+header .bx-wrapper .bx-next:hover{
+	background-position:right bottom !important;
+}
+
+
+/*------------------------------------------------------------------
+	[3. Content]
+------------------------------------------------------------------*/
 #content{
 	background:url(../img/bgOrigami.jpg) no-repeat center top;
 	background-size:cover;
@@ -165,9 +246,9 @@ a:hover{color:#3D9ACC;}
 }
 
 
-/********************************************************
-/                  	 	 footer	                
-*********************************************************/
+/*------------------------------------------------------------------
+	[4. Footer]
+------------------------------------------------------------------*/
 #footer{
 	margin-bottom:20px;
 }
@@ -235,9 +316,10 @@ a:hover{color:#3D9ACC;}
 	background:#ffd800;
 }
 
-/********************************************************
-/                  	 	copyright 	                
-*********************************************************/
+
+/*------------------------------------------------------------------
+	[5. Copyright]
+------------------------------------------------------------------*/
 #copyright{
 	font-family: 'Roboto';
 	font-style: normal;

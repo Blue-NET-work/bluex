@@ -48,41 +48,83 @@ License URI: URI: http://themeforest.net/licenses
 <!-- BEGIN BODY -->
 <body>
 
-<nav class="navbar navbar-default-top navbar-fixed-top" role="navigation">
-  <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="glyphicon glyphicon-align-justify"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" style="width:120px;" alt=""></a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Strona Główna</a></li>
-          <li><a href="#">Oferta</a></li>
-          <li><a href="#">Nasze Realizacje</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">KOSZE GABIONOWE <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Sport</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-</nav>
+<header>
+	
+	<nav class="navbar navbar-default-top navbar-fixed-top" role="navigation">
+	  <div class="container">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="glyphicon glyphicon-align-justify"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="assets/img/logo.png" style="width:120px;" alt=""></a>
+		  </div>
+		  <div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+			  <li class="active"><a href="#">Strona Główna</a></li>
+			  <li><a href="#">Oferta</a></li>
+			  <li><a href="#">Nasze Realizacje</a></li>
+			  <li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">KOSZE GABIONOWE <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+				  <li><a href="#">Action</a></li>
+				  <li><a href="#">Separated link</a></li>
+				</ul>
+			  </li>
+			  <li><a href="#">Sport</a></li>
+			  <li><a href="#">Contact</a></li>
+			</ul>
+		  </div><!--/.nav-collapse -->
+		</div>
+	</nav>
+	
+	
+	<ul class="bx-slider">
+		<!-- item -->
+		<li>
+			<img src="assets/img/slider/baner.jpg" style="width:100%;" class="img-responsive" alt="">
+			<div class="info">
+				<div class="container">
+					<div class="col-md-5">
+						<h4>nowoczesne <span>rozwiązania</span></h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+						<a href="#" class="more">zapoznaj się z naszą ofertą</a>
+					</div>
+				</div>
+			</div>
+		</li>
+		
+		<!-- item -->
+		<li>
+			<img src="assets/img/slider/baner.jpg" style="width:100%;" class="img-responsive" alt="">
+			<div class="info">
+				<div class="container">
+					<div class="col-md-5">
+						<h4>nowoczesne <span>rozwiązania</span></h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+						<a href="#" class="more">zapoznaj się z naszą ofertą</a>
+					</div>
+				</div>
+			</div>
+		</li>
+		
+		<!-- item -->
+		<li>
+			<img src="assets/img/slider/baner.jpg" style="width:100%;" class="img-responsive" alt="">
+			<div class="info">
+				<div class="container">
+					<div class="col-md-5">
+						<h4>nowoczesne <span>rozwiązania</span></h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi.</p>
+						<a href="#" class="more">zapoznaj się z naszą ofertą</a>
+					</div>
+				</div>
+			</div>
+		</li>
+		
+	</ul>
 
-
-<ul class="bx-slider">
-	<li><img src="assets/img/slider/baner.jpg" style="width:100%;" class="img-responsive" alt=""></li>
-	<li><img src="assets/img/slider/baner.jpg" style="width:100%;" class="img-responsive" alt=""></li>
-	<li><img src="assets/img/slider/baner.jpg" style="width:100%;" class="img-responsive" alt=""></li>
-</ul>
-
+</header>
 
 <!-- BEGIN CONTENT -->
 <section id="content">
@@ -303,9 +345,9 @@ License URI: URI: http://themeforest.net/licenses
     </section>
 
 	<section id="copyright">
-		<h5 class="hidden">Copyright jatax.pl</h5>
+		<h5 class="hidden">Copyright bluex</h5>
     	<div class="row">
-        	<div class="col-md-6 col-sm-8 col-xs-8 space-mobile">Copyright &copy; 2014 by jatax.pl - wszelkie prawa zastrzeżone</div>
+        	<div class="col-md-6 col-sm-8 col-xs-8 space-mobile">Copyright &copy; 2014 by bluex - wszelkie prawa zastrzeżone</div>
             <div class="col-md-6 col-sm-4 col-xs-4 text-right">Realization:  <a href="#">Blue-NET.pl</a></div>
         </div>
     </section>
@@ -332,6 +374,7 @@ $('.bxslider').bxSlider({
 	slideMargin: 10,
 	moveSlides: 1,
 	responsive: true,
+	auto: true
 });
 
 $('.bx-slider').bxSlider({
@@ -339,6 +382,7 @@ $('.bx-slider').bxSlider({
 	maxSlides: 1,
 	moveSlides: 1,
 	responsive: true,
+	auto: true
 });
 </script>	
 
